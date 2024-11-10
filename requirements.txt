@@ -1,0 +1,8 @@
+soundfile
+flask 
+# flask-ngrok
+# pyngrok==4.1.1
+langchain==0.0.219
+openai==0.27.8
+accelerate
+Flask-Cors

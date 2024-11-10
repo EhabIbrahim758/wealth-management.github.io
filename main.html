@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .project-title {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .project-title h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: linear-gradient(
+                45deg,
+                #ff6b6b,
+                #4ecdc4,
+                #45b7d1,
+                #96c93d
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            background-size: 300% 300%;
+            animation: gradient-animation 8s ease infinite;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes gradient-animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto 40px;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-text, .tech-details {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .intro-text h2, .tech-details h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .intro-text h2::after, .tech-details h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+            border-radius: 2px;
+        }
+
+        .intro-text p, .tech-details p {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto 20px;
+        }
+
+        .tech-details h3 {
+            text-align: left;
+            max-width: 800px;
+            margin: 20px auto 10px;
+            color: #2d2d2d;
+            font-size: 1.3rem;
+        }
+
+        @media (max-width: 768px) {
+            .project-title h1 {
+                font-size: 2rem;
+            }
+
+            .intro-text h2, .tech-details h2 {
+                font-size: 1.75rem;
+            }
+
+            body {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="project-title">
+        <h1>AI-Powered Wealth Manager Assistant</h1>
+    </div>
+
+    <div class="video-container">
+        <!-- Replace 'your-video.mp4' with your actual video file -->
+        <video controls>
+            <source src="Project Recording.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="intro-text">
+        <h2>Introduction</h2>
+        <p>
+            Welcome to Our AI-Powered Wealth Manager Assistant, an innovative solution seamlessly integrated into our website to transform your investment journey.
+            Leveraging the advanced capabilities of the GPT-4 API, our intelligent chatbot engages you with expertly crafted prompts,
+            asking insightful questions to build a detailed financial profile tailored to your unique goals and risk tolerance.
+            This meticulously generated profile feeds into our sophisticated recommendation system,
+            which analyzes your data to deliver personalized investment strategies, including bonds,
+            equities, and diverse assets. By combining state-of-the-art conversational AI with a robust data-driven engine,
+            our platform empowers you to make informed and optimized investment decisions with ease and confidence.
+            Experience the future of personalized wealth management today through our interactive video demonstration.
+        </p>
+    </div>
+
+    <div class="tech-details">
+        <h2>Technologies Behind Our AI Wealth Manager Assistant</h2>
+        <p>
+            Our AI Wealth Manager Assistant harnesses a powerful combination of advanced technologies to deliver a seamless and intelligent investment guidance experience. Here's an overview of the key technologies that make our solution exceptional:
+        </p>
+
+        <h3>GPT-4 API with Customized Prompts</h3>
+        <p>
+            At the core of our assistant lies the GPT-4 API, a state-of-the-art language model developed by OpenAI. We've meticulously designed customized prompts to tailor GPT-4's responses, enabling the chatbot to function effectively as a wealth manager assistant. This customization ensures that the assistant engages users with relevant, insightful, and context-aware conversations, accurately capturing their financial profiles and investment needs.
+        </p>
+
+        <h3>Recommendation Systems and Machine Learning Models</h3>
+        <p>
+            Our solution incorporates sophisticated recommendation systems powered by machine learning algorithms. These models analyze the comprehensive user profiles generated by the chatbot to identify and suggest optimal investment strategies. By leveraging data-driven insights, the recommendation engine evaluates various asset classes—such as bonds, equities, and real estate—to provide personalized investment options that align with each user's financial goals and risk tolerance.
+        </p>
+
+        <h3>Text-to-Speech (TTS) Models</h3>
+        <p>
+            Enhancing user interaction, we've integrated advanced text-to-speech (TTS) models into our platform. These models convert the assistant's textual recommendations into natural-sounding speech, facilitating a more engaging and accessible user experience. Whether users prefer reading responses or listening to them, the TTS functionality ensures that investment advice is delivered in a clear and user-friendly manner.
+        </p>
+
+        <h3>Front-End and Back-End Development with Python</h3>
+        <p>
+            The backbone of our application is built using Python, a versatile and powerful programming language renowned for its efficiency in both front-end and back-end development. On the front-end, Python frameworks facilitate the creation of an intuitive and responsive user interface, ensuring seamless interaction between users and the chatbot. On the back-end, Python handles data processing, integration with the GPT-4 API, machine learning workflows, and the deployment of recommendation systems. This unified development approach with Python ensures consistency, scalability, and robust performance across the entire platform.
+        </p>
+    </div>
+</body>
+</html>
